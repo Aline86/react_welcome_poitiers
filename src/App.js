@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import React, {useEffect, useState, useRef} from 'react'
+import Accueil from './Components/Accueil'
+import Presentation from './Components/Presentation'
+import Actualites from './Components/Actualites'
+import Adhesion from './Components/Adhesion'
+import Contact from './Components/Contact'
+import Nav from './Components/Nav/Nav'
+import Header from './Components/Header/Header'
+import Routes from './Routes.js';
 import './App.css';
+import {ThemeContext} from './Context/ThemeContext'
+import ThemeContextProvider from './Context/ThemeContext'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import Footer from './Components/Footer/Footer'
+export default function App() {
+  const targetRef = useRef()
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+      <>
+        <Header />
+        <div ref ={targetRef} >
+        <ThemeContextProvider targetRef={targetRef}>
+        <Routes /> 
+        </ThemeContextProvider>
+        </div>
+        <br />
+        <br />
+        <Footer />
+      </>
+    )
 }
 
-export default App;
+;

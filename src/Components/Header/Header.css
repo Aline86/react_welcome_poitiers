@@ -1,0 +1,27 @@
+img{
+    height: 80px;
+    width: 120px;
+    object-fit: cover;
+    line-height: 80px;
+}
+
+.fb{
+    width: 60px;
+    height: 60px;
+    line-height: 80px;
+}
+
+.facebook{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width:800px) {
+    .facebook{
+        display: none;
+       
+    }
+  
+}
