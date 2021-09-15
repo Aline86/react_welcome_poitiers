@@ -6,18 +6,12 @@ import {ThemeContext} from '../Context/ThemeContext'
 export default function Accueil(props){
     const {scroll, setScroll} = useContext(ThemeContext)
     return (
-        
             <>
                 <div className="texte">
                     <div className={scroll? "margin" : ""} >
-           
                         <div className="card">
-
-
-                        
                         <h1>Présentation de l’Association WELCOME POITIERS</h1>
                         <br />
-
                         <p className="first">Créée en juillet 2016, l'association Welcome Poitiers, accueille des demandeurs d'asile en attente de structures d'accueil proposées par l'Etat.</p>
                         <br />
                         <p>L 'association se veut « apolitique, laïque et indépendante » et elle ne reçoit aucune subvention.</p>
@@ -51,6 +45,5 @@ export default function Accueil(props){
                 </div>
             </div>
         </>
-    
     )
 }

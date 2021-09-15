@@ -16,7 +16,7 @@ export default function Footer() {
                     <div className="lien2">
                         <div>
                             <div className="flex">
-                                <a  href="https://www.facebook.com/WelcomePoitiers"><img className="smallerfb"  alt="facebook" src={facebook} /></a><span className="dec">Réseaux Sociaux</span>
+                                <a  href="https://www.facebook.com/WelcomePoitiers"><img className="smallerfb"  alt="facebook" src={facebook} /></a><span className="dec"><a className="textdecoration" href="https://www.facebook.com/WelcomePoitiers">Réseaux Sociaux</a></span>
                             </div>
                             <br />
                             <div>

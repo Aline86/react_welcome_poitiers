@@ -18,9 +18,7 @@
 .container1{
   display: flex;
 }
-.margin{
-  
-}
+
 .margin-none{
   margin-left: 0px;
 }
@@ -151,6 +149,10 @@ h1{
   height: 100%;
   object-fit: cover;
 }
+.gray_button:hover{
+  background:  rgb(82, 82, 82)!important;
+  
+}
 @media screen and (max-width:800px) {
   .flex{
     display: flex;
@@ -237,6 +239,7 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
   }
   .full{
     

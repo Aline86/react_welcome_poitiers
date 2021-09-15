@@ -37,44 +37,7 @@ export default function Actualites(){
            
                     <div className="card">
                         <h1>Actualités de l'association</h1>
-                        <br />
-                        <Text>
-                            <div className="center">
-                                <img className="full" alt="photo adhérants article NR" src={article1} />
-                            </div>
-                            <br />
-                            <h3>Welcome Poitiers recherche des familles et appelle aux dons (NR Poitiers)</h3></Text>
-                            <br />
-                            Depuis trois ans, Welcome Poitiers a tissé un réseau de familles qui hébergent des demandeurs d’asile. L’association souhaite étoffer ses rangs.
-                        {
-                            toggle && <Text>
-                            
-                            
-                            <br />
-                            Une simple boîte aux lettres dans l’entrée de la Maison des Trois-Quartiers relie des demandeurs d’asile à l’association Welcome Poitiers. La simplicité s’arrête là. Dans les faits, cette association créée en 2016 s’est donnée pour vocation de trouver un toit temporaire (chez des particuliers de leur réseau) à des hommes, femmes et enfants venus de pays où ils se sentaient en grand danger. 40 personnes ont été hébergées en trois ans « Aujourd’hui, nous avons entre 125 et 130 adhérents et une soixantaine de familles accueillantes, cadrent Colette Carreyre (vice-présidente) et Maryline Tourancheau (administratrice). Nous sommes une association laïque, apolitique et non subventionnée. Et nous y tenons. Nous essayons de représenter la société française au sens large avec toutes ses composantes. »
-                            “ Des clés de compréhension ” L’association accepte donc tous les demandeurs d’asile « s’ils partagent les mêmes valeurs que l’association ». Au cours des premiers mois du lancement de Welcome, les familles accueillantes se comptaient sur les doigts d’une main. Petit à petit, en multipliant les réunions d’informations, l’association a aussi multiplié les familles prêtes à s’engager.
-                            <br />
-                            <br />
-                            Pour autant, les nouvelles candidatures sont toujours les bienvenues, tout comme les dons (*) pour aider financièrement les hébergés dans des démarches administratives plus complexes qui nécessitent des déplacements ; notamment à Paris, accompagnés d’un « tuteur » de l’association. « La famille s’engage à accueillir de 15 jours à un mois, plusieurs fois par an si elle veut. Et l’association s’engage à héberger le demandeur pendant six mois maximum, précise Maryline Tourancheau. Pour résumer, sur une période de six mois, il nous faut six à sept familles. Depuis trois ans, nous avons suivi 40 personnes. » Des femmes seules avec enfants Au-delà de l’hébergement, les familles « donnent aux migrants des clés de compréhension de notre société ». Des hôtes qui doivent désormais accueillir des femmes seules avec leurs enfants. Une situation relativement nouvelle avec des cas de conscience parfois terrible. « Ces jeunes mères ou parfois des femmes enceintes, si elles ne trouvent pas de place au 115 ou via d’autres réseaux, dorment dans la rue. Elles y sont souvent en grand danger. C’est indigne ! », martèlent les deux bénévoles et hôtes.
-                            <br />
-                            <br />
-                            (*) Association reconnue d’utilité publique, Welcome Poitiers peut recueillir des dons d’argent ; ce qui ouvre droit à une réduction fiscale pour le donateur.
-                            <br />
-                            Texte de Marie-Laure Aveline (NR Poitiers)</Text>
-                            
-                        }
-                        <br /> 
-                        <br />
-                        <div className="button">
-                            <button 
-                                onClick={showMore_art_1}
-                                className="show-more">
-                                {toggle ? 'Moins': 'Lire plus'}
-                            </button>
-                        </div>
-                        <br /> 
-                        <br /> 
-                        <Text>
+                        <br />             <Text>
                             <div className="center">
                                 <img className="full" alt="photo adhérants article NR" src={article2} />
                             </div>
@@ -82,10 +45,8 @@ export default function Actualites(){
                             <h3>Poitiers : l'association Welcome cherche des familles accueillantes</h3></Text>
                             <br />
                             L’association vient en aide à des demandeurs d’asile en situation régulière. Elle souhaite développer son réseau d’accueil et d’hébergement. 
-                        {
+                            {
                             toggle_1 && <Text>
-                            
-                            
                             <br />
                             Agir pour améliorer la situation des demandeurs d’asile, adoucir un temps la vie de celles et ceux qui ont fui leur pays dans l’urgence… C’est depuis quelques années le but que s’est fixé l’association Welcome en créant un réseau local d’accueil et d’hébergement. 
                             <br />
@@ -105,9 +66,7 @@ export default function Actualites(){
                             Un engagement dont a pu profiter Cheik, un jeune malien de 25 ans : « Welcome m’a permis de trouver un toit pour me poser et avancer, résume-t-il, avant je n’avais pas trop d’espoir. Je dormais à la gare ou au 115. Mon avenir est meilleur. J’ai un projet avec une entreprise de Benassay qui m’a proposé un stage et puis je souhaite intégrer la faculté de géographie à l’université. J’attends une réponse fin avril et je suis aussi dans l’attente d’un rendez-vous à l’Ofpra [Office français de protection des réfugiés et apatrides]. Mes deux tuteurs m’ont vraiment accompagné et soutenu. Et puis les familles dans lesquelles je suis passé m’invitent encore aujourd’hui ». Le sens de l’accueil… 
                             <br />
                             <br />
-                            
-                            Texte écrit par Jean Michel Gouin </Text>
-                            
+                            Texte écrit par Jean Michel Gouin </Text> 
                         }
                         <br />
                         <br />
@@ -118,6 +77,39 @@ export default function Actualites(){
                                 {toggle_1 ? 'Moins': 'Lire plus'}
                             </button>
                         </div> 
+                        <br />
+                        <br />
+                        <Text>
+                            <div className="center">
+                                <img className="full" alt="photo adhérants article NR" src={article1} />
+                            </div>
+                            <br />
+                            <h3>Welcome Poitiers recherche des familles et appelle aux dons (NR Poitiers)</h3></Text>
+                            <br />
+                            Depuis trois ans, Welcome Poitiers a tissé un réseau de familles qui hébergent des demandeurs d’asile. L’association souhaite étoffer ses rangs.
+                            {
+                            toggle && <Text>
+                            <br />
+                            Une simple boîte aux lettres dans l’entrée de la Maison des Trois-Quartiers relie des demandeurs d’asile à l’association Welcome Poitiers. La simplicité s’arrête là. Dans les faits, cette association créée en 2016 s’est donnée pour vocation de trouver un toit temporaire (chez des particuliers de leur réseau) à des hommes, femmes et enfants venus de pays où ils se sentaient en grand danger. 40 personnes ont été hébergées en trois ans « Aujourd’hui, nous avons entre 125 et 130 adhérents et une soixantaine de familles accueillantes, cadrent Colette Carreyre (vice-présidente) et Maryline Tourancheau (administratrice). Nous sommes une association laïque, apolitique et non subventionnée. Et nous y tenons. Nous essayons de représenter la société française au sens large avec toutes ses composantes. »
+                            “ Des clés de compréhension ” L’association accepte donc tous les demandeurs d’asile « s’ils partagent les mêmes valeurs que l’association ». Au cours des premiers mois du lancement de Welcome, les familles accueillantes se comptaient sur les doigts d’une main. Petit à petit, en multipliant les réunions d’informations, l’association a aussi multiplié les familles prêtes à s’engager.
+                            <br />
+                            <br />
+                            Pour autant, les nouvelles candidatures sont toujours les bienvenues, tout comme les dons (*) pour aider financièrement les hébergés dans des démarches administratives plus complexes qui nécessitent des déplacements ; notamment à Paris, accompagnés d’un « tuteur » de l’association. « La famille s’engage à accueillir de 15 jours à un mois, plusieurs fois par an si elle veut. Et l’association s’engage à héberger le demandeur pendant six mois maximum, précise Maryline Tourancheau. Pour résumer, sur une période de six mois, il nous faut six à sept familles. Depuis trois ans, nous avons suivi 40 personnes. » Des femmes seules avec enfants Au-delà de l’hébergement, les familles « donnent aux migrants des clés de compréhension de notre société ». Des hôtes qui doivent désormais accueillir des femmes seules avec leurs enfants. Une situation relativement nouvelle avec des cas de conscience parfois terrible. « Ces jeunes mères ou parfois des femmes enceintes, si elles ne trouvent pas de place au 115 ou via d’autres réseaux, dorment dans la rue. Elles y sont souvent en grand danger. C’est indigne ! », martèlent les deux bénévoles et hôtes.
+                            <br />
+                            <br />
+                            (*) Association reconnue d’utilité publique, Welcome Poitiers peut recueillir des dons d’argent ; ce qui ouvre droit à une réduction fiscale pour le donateur.
+                            <br />
+                            Texte de Marie-Laure Aveline (NR Poitiers)</Text>
+                        }
+                        <br /> 
+                        <br />
+                        <div className="button">
+                            <button 
+                                onClick={showMore_art_1}
+                                className="show-more">
+                                {toggle ? 'Moins': 'Lire plus'}
+                            </button>
+                        </div>
                         <br /> 
                         <br /> 
                         <Text>
@@ -127,15 +119,10 @@ export default function Actualites(){
                             <br />
                             <h3>“ Mohammed, on l’accueille comme n’importe quel invité ” (NR Poitiers)</h3>
                             Depuis trois ans, Welcome Poitiers a tissé un réseau de familles qui hébergent des demandeurs d’asile. L’association souhaite étoffer ses rangs.
-
                             </Text>
-
                             <br />
-                            
-                        {
+                            {
                             toggle_2 && <Text>
-                            
-                            
                             <br />
                             Chez les Weeger, l’accueil de l’autre est devenu une seconde nature. Avant même de participer à la fondation, voici deux ans de Welcome Poitiers, le couple était déjà à l’écoute de la détresse de ces étrangers venus de nulle part dormir dans nos rues, faute d’hébergement. Benoît (qui est aussi le « tuteur » de Mohammed au sein de l’association) a passé un mois comme bénévole dans la « jungle » de Calais et, il y a quelques années, les Weeger ont hébergé une jeune albanaise, sans papiers, en situation illégale. 
                             <br />
@@ -153,7 +140,6 @@ export default function Actualites(){
                             <br />
                             <br />
                             Texte écrit par Vincent Buche  (NR Poitiers)</Text>
-                            
                         }
                         <br /> 
                         <br />
@@ -174,10 +160,8 @@ export default function Actualites(){
                             <h3>Welcome cherche des familles d'accueil (NR Poitiers)</h3></Text>
                             <br />
                             L’association vient en aide aux demandeurs d’asile en leur offrant un hébergement temporaire. Elle cherche à élargir son réseau d’accueil. 
-                        {
+                            {
                             toggle_3 && <Text>
-                            
-                            
                             <br />
                             Pour celles et ceux qui fuient leur pays dans un contexte d'urgence et de danger, l'arrivée en France ne marque pas forcément la fin des difficultés. Demandeurs d'asile, ils n'obtiendront pas tous satisfaction. Et en attendant de pouvoir bénéficier du dispositif national d'accueil, il leur faut trouver le gîte et le couvert. C'est là qu'intervient Welcome, association créée il y a juste un an à Poitiers par quelques personnes déjà sensibilisées à la cause des migrants. En lien avec le réseau national Welcome France qui « œuvre sur le terrain pour apporter aide et soutien aux personnes déplacées par force de leur pays d'origine, selon la tradition d'hospitalité liée à la demande d'asile »,l'association poitevine, forte de 148 adhérents à ce jour, cherche aujourd'hui à élargir son réseau de familles d'accueil. 
                             <br />
@@ -203,8 +187,7 @@ export default function Actualites(){
                             <br />
                             Contact : welcomepoitiers@ outlook.fr
                             <br />
-                            Texte écrit par Jean-Michel Gouin (NR Poitiers)</Text>
-                            
+                            Texte écrit par Jean-Michel Gouin (NR Poitiers)</Text>  
                         }
                         <br /> 
                         <br />
@@ -225,10 +208,8 @@ export default function Actualites(){
                             <h3>Bienvenu a été le premier migrant accueilli par le réseau Welcome de Poitiers (NR Poitiers)</h3></Text>
                             <br />
                             Le réseau Welcome, ce sont des personnes qui accueillent chez elles un migrant, le temps d'avancer dans sa demande d'asile et de lui offrir un peu de répit. Ensuite, c'est une autre famille qui prend le relais. Sept migrants ont été accueillis par le réseau depuis mi-octobre à Poitiers. 
-                        {
+                            {
                             toggle_4 && <Text>
-                            
-                            
                             <br />
                             Vincent Le Roux préside le réseau Welcome de Poitiers. Il a été le premier à accueillir un migrant chez lui. Vincent et sa compagne ont de la place maintenant. Leurs enfants devenus grands ne vivent plus à la maison." On accueille des gens qui n'ont rien. Très peu de ressources et quelques vêtements dans un sac en plastique. C'est forcément assez fort." Aujourd'hui, Bienvenu vit chez un autre couple. Il en est à sa troisième famille. " Quatre semaines, c'est une bonne durée pour qu'il se pose un peu et que l'on soit disponible pour lui. Plus, cela pourrait devenir compliqué pour certains." 
                             <br />
@@ -240,7 +221,6 @@ export default function Actualites(){
                             <br />
                             <br />
                             Seule obligation des accueillants : fournir deux repas par jour et habiter à Poitiers ( ou en proche périphérie ) A Poitiers, une trentaine de familles forment le réseau Welcome.
-
                             <br />
                             <br />
                             Pour devenir accueillants, il faut pouvoir offrir une chambre à la personne pendant quatre semaines et deux repas par jour ( petit déjeuner et dîner). 
@@ -261,8 +241,7 @@ export default function Actualites(){
                             M3Q, 25 rue du Général-Sarrail à Poitiers.
                             <br />
                             Texte écrit par Marine Rondonnier 
-                           </Text>
-                            
+                           </Text> 
                         }
                         <br /> 
                         <br />
@@ -273,7 +252,6 @@ export default function Actualites(){
                                 {toggle_4 ? 'Moins': 'Lire plus'}
                             </button>
                         </div>
-                        
                     </div>
                 </div>
             </div>

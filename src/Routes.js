@@ -8,7 +8,7 @@ import Nav from './Components/Nav/Nav'
 
 import './App.css';
 
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {BrowserRouter, HashRouter, Route, Switch} from "react-router-dom";
 import {ThemeContext} from './Context/ThemeContext'
 
 
@@ -18,12 +18,9 @@ export default function Routes() {
       //{() => <Accueil toggleHeight={scroll} />} 
   return (
     <>
-    
-
-      <BrowserRouter>
+      <HashRouter basename={process.env.PUBLIC_URL}>
       <div className="container">
       <Nav />
-        
         <Switch>
           <Route path="/"   exact component={Accueil} />
           <Route path="/Presentation" exact component={Presentation}   />
@@ -33,14 +30,7 @@ export default function Routes() {
           <Route path="/" component={() => <div>ERREUR 404</div>} /> 
         </Switch>
       </div>
-      
-     
-        
-        
-      </BrowserRouter>
-
-  
-      
+      </HashRouter>  
     </>
   );
 }

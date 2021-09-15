@@ -9,14 +9,13 @@ export default function Projet(){
     const {scroll, setScroll} = useContext(ThemeContext)
     return (
         <div>
-        <div className={scroll? "margin" : ""} >
+            <div className={scroll? "margin" : ""} >
+                <br />
+                <br />
+                <img className="fullimg" src={presentation} alt="presentation association flyer" />  
+            </div>
             <br />
             <br />
-            <img className="fullimg" src={presentation} alt="presentation association flyer" />
-            
-        </div>
-        <br />
-        <br />
         </div>
     )
 }
